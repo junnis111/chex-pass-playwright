@@ -12,7 +12,7 @@ class Login {
     await this.page.goto("https://stage.app.chexpass.io/test-5/login");
   }
 
-  async LoginAccount(email, password) {
+  async loginAccount(email, password) {
     await this.page.locator(this.email).fill(email);
     await this.page.locator(this.password).fill(password);
     await this.page.locator(this.signin).click();

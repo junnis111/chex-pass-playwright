@@ -8,7 +8,7 @@ test("chex-pass", async ({ page }) => {
   //login
   const login = new Login(page);
   await login.gotoChexPass();
-  await login.LoginAccount("junnis111+t5@gmail.com", "Qwerty123@#");
+  await login.loginAccount("junnis111+t5@gmail.com", "Qwerty123@#");
 
   // Personal Details
   const personalDetails = new PersonalDetails(page);
